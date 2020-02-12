@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Item
   - OutOfBounds
+  - Ball Respawn
   layers:
   - Default
   - TransparentFX

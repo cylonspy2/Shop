@@ -15,11 +15,9 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
-        //If player presses space
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.R))
         {
-            //Toggle whether or not the player's rigid body uses gravity
-            rb.useGravity = !rb.useGravity;
+            Reset();
         }
     }
 
@@ -36,5 +34,10 @@ public class Player : MonoBehaviour
             //reset their position
             transform.position = startPos;
         }
+    }
+
+    public void Reset()
+    {
+        this.transform.position = startPos;
     }
 }
