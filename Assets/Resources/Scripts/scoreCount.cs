@@ -6,13 +6,11 @@ using UnityEngine.UIElements;
 
 public class scoreCount : MonoBehaviour
 {
+    [SerializeField]
+    private Text score;
 
-    public GameObject score1;
-    public GameObject score2;
-    public GameObject score3;
-    public Text score;
-    public int startingScore = 0;
-    private int currentScore;
+    private int startingScore = 0;
+    private static int currentScore;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +27,5 @@ public class scoreCount : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         currentScore++;
-        
     }
 }
