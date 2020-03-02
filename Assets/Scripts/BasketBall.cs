@@ -9,6 +9,11 @@ public class BasketBall : MonoBehaviour
     [SerializeField] private Transform resetPosition;
     private GameObject player;
 
+    /// <summary>
+    /// Determines whether player can throw ball
+    /// </summary>
+    private bool holdingBall = true;
+
     [SerializeField]
     private Light spotlight;
 
@@ -29,10 +34,13 @@ public class BasketBall : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Only launch the ball if we're holding it
+        if (holdingBall && Input.GetKeyDown(KeyCode.Space))
         {
-            
             Launch();
+
+            // No longer holding ball
+            holdingBall = false;
         }
 
         // Make spotlight follow ball
@@ -45,6 +53,9 @@ public class BasketBall : MonoBehaviour
         this.transform.position = resetPosition.position;
         rb.isKinematic = true;
         this.transform.parent = player.transform;
+
+        // Holding ball again, so we can throw it
+        holdingBall = true;
     }
 
     private void Launch() {
