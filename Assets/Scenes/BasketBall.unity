@@ -381,7 +381,7 @@ Transform:
   - {fileID: 313734310}
   - {fileID: 1767891514}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &117445591
 PrefabInstance:
@@ -861,7 +861,7 @@ Transform:
   - {fileID: 335769455}
   - {fileID: 1507429834}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &313734310 stripped
 Transform:
@@ -2442,13 +2442,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.016846836, y: -0.7069061, z: -0.016846836, w: 0.7069061}
-  m_LocalPosition: {x: 10.26, y: 9.01, z: 0.06}
+  m_LocalRotation: {x: 0.04118148, y: -0, z: 0.000000013038514, w: 0.99915177}
+  m_LocalPosition: {x: 0, y: 12.86, z: -11.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -2.73, y: -90.00001, z: 0}
+  m_Father: {fileID: 334602826}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 4.7200003, y: 0, z: 0}
 --- !u!1 &985118946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2838,7 +2838,7 @@ RectTransform:
   - {fileID: 864836795}
   - {fileID: 876045050}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2878,7 +2878,7 @@ Transform:
   - {fileID: 1574036363}
   - {fileID: 985118948}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1213934313
 GameObject:
@@ -3488,7 +3488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1728635099
 GameObject:
@@ -3990,6 +3990,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344671109809196805, guid: fa3ed37c16cffad40ba02c3054d7f4ab,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344671109809196805, guid: fa3ed37c16cffad40ba02c3054d7f4ab,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344671109809196805, guid: fa3ed37c16cffad40ba02c3054d7f4ab,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1137187018, guid: fa3ed37c16cffad40ba02c3054d7f4ab, type: 3}
       propertyPath: Speed
