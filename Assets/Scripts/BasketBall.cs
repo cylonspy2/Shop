@@ -9,6 +9,9 @@ public class BasketBall : MonoBehaviour
     [SerializeField] private Transform resetPosition;
     private GameObject player;
 
+    [SerializeField]
+    private Light spotlight;
+
     void Start()
     {
         player = this.gameObject.transform.root.gameObject;
@@ -31,6 +34,9 @@ public class BasketBall : MonoBehaviour
             
             Launch();
         }
+
+        // Make spotlight follow ball
+        spotlight.transform.position = new Vector3(transform.position.x, spotlight.transform.position.y, transform.position.z);
     }
 
     // I don't know why it doesn't reset to the starting position 
