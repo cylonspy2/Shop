@@ -12,6 +12,8 @@ public class scoreCount : MonoBehaviour
     private int startingScore = 0;
     private static int currentScore;
 
+    public AudioSource cheer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +29,6 @@ public class scoreCount : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         currentScore++;
+        cheer.Play();
     }
 }
